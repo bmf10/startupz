@@ -1,0 +1,31 @@
+$enable-dark-mode: false;
+$primary: #46b8c8;
+$secondary: #3d4f5c;
+
+/*BUTTON CUSTOM*/
+$btn-color: #fff;
+$btn-border-radius: 9999px;
+$btn-font-size: 18px;
+$btn-font-weight: 600;
+
+@import 'bootstrap/scss/bootstrap';
+
+.btn-primary {
+  color: #fff !important;
+}
+
+.btn-outline-primary {
+  &:hover,
+  &:active,
+  &:focus-visible {
+    color: #fff !important;
+  }
+}
+
+.form-control {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+  border: none;
+  padding: 14px 16px;
+}

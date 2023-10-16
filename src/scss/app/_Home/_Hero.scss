@@ -1,0 +1,92 @@
+.hero-container {
+  background: url('/hero.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  background-size: 230px 165px;
+
+  @include media-breakpoint-up(sm) {
+    background-size: 300px 216px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-size: 500px 360px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    background-size: 700px 504px;
+  }
+}
+
+.hero {
+  max-width: $container;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 16px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -1.7px;
+    max-width: 200px;
+    font-size: 40px;
+  }
+
+  &__description {
+    color: $text-secondary;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+  }
+
+  .btn {
+    padding: 10px 34px;
+  }
+
+  @include media-breakpoint-up(md) {
+    gap: 16px;
+    height: 500px;
+
+    &__title {
+      max-width: 450px;
+      font-size: 65px;
+    }
+
+    &__description {
+      font-size: 18px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 600px;
+
+    &__title {
+      max-width: 450px;
+      font-size: 75px;
+    }
+
+    &__description {
+      font-size: 20px;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 750px;
+
+    &__title {
+      max-width: 450px;
+      font-size: 85px;
+    }
+
+    &__description {
+      font-size: 23px;
+    }
+  }
+}

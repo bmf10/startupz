@@ -1,0 +1,20 @@
+$container: 1200px;
+$text-primary: #3d4f5c;
+$text-secondary: #fb8958;
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 73px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+  }
+
+  @import 'NavigationBar', 'Hero', 'About', 'Solver', 'OurCore', 'OurWorks',
+    'Hiring', 'Contact', 'Footer';
+}
+
+@import 'ProjectModal';

@@ -1,0 +1,19 @@
+.project-modal {
+  border: 0;
+
+  .modal-content {
+    border: none;
+    border-radius: 20px;
+
+    .modal-header {
+      border: none;
+    }
+
+    .modal-body {
+      .description {
+        font-size: 14px;
+        margin-top: 60px;
+      }
+    }
+  }
+}
